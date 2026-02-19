@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Noticias Panamá | 14 Febrero 2026</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<style>
+/* RESET Y BODY */
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background:#f0f0f0;
+    line-height:1.6;
+    color:#333;
+}
+
+/* BARRA SUPERIOR */
+.top-bar{
+    background: linear-gradient(to right, #c40000, #ff3333);
+    color:white;
+    text-align:center;
+    padding:18px;
+    font-size:32px;
+    font-weight:bold;
+}
+
+/* MENÚ */
+.menu{
+    background:#222;
+    text-align:center;
+    padding:12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin:0 25px;
+    font-weight:bold;
+    font-size:18px;
+    transition: color 0.3s;
+}
+
+.menu a:hover{
+    color:#ffcc00;
+}
+
+/* CONTENEDOR */
+.container{
+    width:90%;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap:25px;
+}
+
+/* NOTICIA PRINCIPAL */
+.main-news{
+    background:white;
+    padding:25px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    border-radius:10px;
+}
+
+.main-news h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.main-news img{
+    width:100%;
+    height:auto;
+    margin:15px 0;
+    border-radius:8px;
+    transition: transform 0.3s;
+}
+
+.main-news img:hover{
+    transform: scale(1.05);
+}
+
+.main-news p{
+    font-size:18px;
+}
+
+/* TABLA */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:25px;
+    border-radius:6px;
+    overflow:hidden;
+}
+
+th, td{
+    border:1px solid #ccc;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#c40000;
+    color:white;
+}
+
+/* NOTICIAS SECUNDARIAS */
+.side-news .news-card {
+    background:white;
+    padding:15px;
+    margin-bottom:20px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.15);
+    border-radius:8px;
+    transition: transform 0.3s;
+}
+
+.side-news .news-card:hover {
+    transform: translateY(-5px);
+}
+
+.side-news h3 {
+    border-bottom:3px solid #c40000;
+    padding-bottom:5px;
+    margin-top:10px;
+}
+
+.side-news img {
+    width:100%;
+    height:auto;
+    margin:10px 0;
+    border-radius:8px;
+    transition: transform 0.3s;
+}
+
+.side-news img:hover{
+    transform: scale(1.05);
+}
+
+/* PIE DE PÁGINA */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* INSTAGRAM CONTACTO EN FOOTER */
+.contact-instagram {
+    margin-top: 15px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-instagram p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-instagram a {
+    text-decoration: none;
+    color: #c40000;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+}
+
+.contact-instagram a:hover {
+    color: #ff6600;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px){
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .menu a {
+        display:block;
+        margin:10px 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="top-bar">
+Noticias Panamá | 14 de Febrero 2026
+</div>
+
+<div class="menu">
+<a href="#">Carnaval</a>
+<a href="#">Clima</a>
+<a href="#">Salud</a>
+<a href="#">Economía</a>
+</div>
+
+<div class="container">
+
+<!-- NOTICIA PRINCIPAL -->
+<div class="main-news">
+<h2>Panamá inicia celebraciones del Carnaval 2026</h2>
+
+<img src="carnaval.jpg" alt="Desfile de Carnaval en Las Tablas, Panamá">
+
+<p>
+Las fiestas de Carnaval comenzaron este 14 de febrero en Las Tablas,
+Ciudad de Panamá y otras provincias. Miles de personas disfrutan
+desfiles, música y actividades culturales durante todo el fin de semana.
+</p>
+
+<h3>Resumen del Día</h3>
+<table>
+<tr>
+<th>Sección</th>
+<th>Evento</th>
+<th>Fecha</th>
+</tr>
+<tr>
+<td>Carnaval</td>
+<td>Inicio Oficial</td>
+<td>14 Feb 2026</td>
+</tr>
+<tr>
+<td>Clima</td>
+<td>Radiación UV Alta</td>
+<td>14 Feb 2026</td>
+</tr>
+<tr>
+<td>Salud</td>
+<td>Alerta Influenza</td>
+<td>14 Feb 2026</td>
+</tr>
+<tr>
+<td>Economía</td>
+<td>Crecimiento 3.3%</td>
+<td>2026</td>
+</tr>
+</table>
+</div>
+
+<!-- NOTICIAS SECUNDARIAS -->
+<div class="side-news">
+
+<div class="news-card">
+<h3>Radiación UV-B en niveles extremos</h3>
+<img src="radiacion_uv.jpg" alt="Protección solar recomendada">
+<p>Autoridades recomiendan protección solar durante actividades al aire libre.</p>
+</div>
+
+<div class="news-card">
+<h3>19 muertes por influenza en 2026</h3>
+<img src="salud_influenza.jpg" alt="Vacunación preventiva">
+<p>El Ministerio de Salud pide vacunación preventiva.</p>
+</div>
+
+<div class="news-card">
+<h3>Economía crecerá 3.3% este año</h3>
+<img src="economia_panama.jpg" alt="Crecimiento económico Panamá">
+<p>Proyección positiva impulsada por inversión extranjera.</p>
+</div>
+
+</div>
+</div>
+
+<footer>
+Contacto: drb1711r@gmail.com | Tel: +507 6179-0245
+
+<div class="contact-instagram">
+    <p>Síguenos en Instagram:</p>
+    <a href="https://www.instagram.com/tuusuario" target="_blank">
+        <img src="instagram-icon.png" alt="Instagram Noticias Panamá" width="20">
+        @g.isamar_08
+    </a>
+</div>
+</footer>
+
+</body>
+</html>
+
+
